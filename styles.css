@@ -1,0 +1,100 @@
+@importurl('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+}
+:root{
+    --clr-dark:#1c2042;
+    --clr-white:#fff;
+    --max-width:1140px;
+    transition:all 0.5s ease;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--clr-white);
+}
+.container{
+    
+    max-width:var(--max-width);
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}
+.btn{
+    
+    display:inlne-block;
+    border: radius 8px;
+    padding:0.8rem 1.5rem;
+    margin: top 1.25rem;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
+    color:#1c2042;
+    border: 2px solid #1c2042;
+}
+.card{
+    width: 224rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 0.5rem 1.75rem 3rem 1.75rem;
+    background-color: #1c2042;
+    color: #fff;
+    border-radius: 10px;}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.form-control label,
+.form-control input{
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    font: size 600px;
+    outline:none;
+    border: none;
+}
+.form-control.error input{
+    border-color: red;
+
+}
+.form-control.success input{
+    border-color:green;
+}
+.form-control small{
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    visibility: hidden;
+    
+}
+.form-control.error small{
+    visibility: visible;
+}
+.btn-light{
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+    color: var(--clr-dark);
+    transition: var(--transition);
+}
+.btn-light:hover{
+    background-color: transparent;
+    color: var(--clr-white);
+}
+.btn-block{
+    display: block;
+    width:100%;
+    margin: 1.5rem auto;
+}
